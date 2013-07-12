@@ -16,7 +16,7 @@
 
 @implementation CJWFacebookWrapper
 
-#pragma mark - AppDelgate
+#pragma mark - AppDelegate
 
 - (BOOL)openURL:(NSString *)sourceApplication url:(NSURL *)url {
     return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication fallbackHandler:^(FBAppCall *call) {
